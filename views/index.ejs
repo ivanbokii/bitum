@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <script type="text/javascript" src="/javascripts/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/vendor/handlebars.js"></script>
+    <script type="text/javascript" src="/javascripts/vendor/moment.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.0.min.js"></script>
+    
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+
+    <script type="text/javascript">
+      window.bitum = { feedsData: <%- data %> };
+    </script>
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div>
+        <a href="{{url}}">{{title}}</a>
+        <p>
+          {{#if imageUrl}}
+            <img src="{{imageUrl}}">
+          {{/if}}
+          {{description}}
+        </p>
+        <span>{{pubdate}}</span>
+      </div>
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="main">
+          bitum <span class="small-font"> news aggregator</span>
+        </div>
+      </div>
+      
+      <div class="main">
+        <div class="titles">
+          <div><span>last check was at ---</span></div>
+          <span class="left"><%= names[0] %></span>
+          <span class="right"><%= names[1] %></span>
+        </div>
+        
+        <div class="left <%= names[0] %>">
+          <div class="clear"></div>
+          <div class="entries">
+          </div>
+        </div>
+
+        <div class="right <%= names[1] %>">
+          <div class="clear"></div>
+          <div class="entries">
+          </div>
+        </div>
+      <div class="clear"></div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>

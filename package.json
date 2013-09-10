@@ -1,0 +1,27 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.4",
+    "ejs": "*",
+    "redis": "",
+    "feedparser": "",
+    "request": "",
+    "underscore": "",
+    "async": "",
+    "socket.io": "",
+    "moment": ""
+  },
+  "devDependencies": {
+    "chai": "",
+    "underscore": "",
+    "grunt": "",
+    "moment": "",
+    "grunt-simple-mocha": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

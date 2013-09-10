@@ -1,0 +1,12 @@
+{
+  "feeds": [
+    {
+      "name": "bbc",
+      "url": "http://feeds.bbci.co.uk/news/england/rss.xml"
+    },
+    {
+      "name": "sky",
+      "url": "http://news.sky.com/feeds/rss/uk.xml"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset finished */
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #e3e3e3;
+  position: relative;
+
+  height: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+  height: 50px;
+  background-color: #393939;
+}
+
+.header .main {
+  font-family: 'Arial Narrow';
+  font-size: 24px;
+  color: white;
+}
+
+.small-font {
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto -50px;
+  height: auto;
+  height: auto !important;
+  min-height: 100%;
+}
+
+.main {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 20px 80px 20px;
+
+  font-family: 'Geneva';
+}
+
+.main .left {
+  float: left;
+  width: 470px;
+}
+
+.main .right {
+  float: right;
+  width: 470px;
+}
+
+.main .titles {
+  height: 35px;
+  border-bottom: 1px #393939 solid;
+  position: relative;
+}
+
+.main .titles .left {
+  float: left;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px;
+}
+
+.main .titles .right {
+  float: right;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  text-align: right;
+}
+
+.main .titles div {
+  font-size: 10px;
+  color: white;
+  background-color: #393939;
+  padding: 4px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  bottom: 0px;
+  left: 380px;
+}
+
+.entries {
+  margin-top: 15px;
+}
+
+.entries div {
+  background: white;
+  border: 1px solid #b3b3b3;
+  padding: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.entries div a {
+  color: #393939;
+  font-size: 14px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.entries div img {
+  float: left;
+  padding-right: 10px;
+}
+
+.entries div p {
+  float: right;
+  color: #393939;
+  font-size: 12px;
+  padding-bottom: 5px;
+  width: 100%;
+  line-height: 14px;
+}
+
+.entries div span {
+  font-size: 10px;
+  color: #b3b3b3;
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+}
+
+body > .container { height: auto; min-height: 100%; }
+
+.footer {
+  height: 50px;
+  background-color: #393939;
+}
