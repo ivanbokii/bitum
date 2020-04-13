@@ -1,4 +1,4 @@
-Bitum (news aggregator)
+Bitum (news aggregator; deprecated)
 ====================
 
 Description
